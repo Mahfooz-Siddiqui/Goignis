@@ -1,0 +1,17 @@
+@keyframes changeImage {
+    0% { background-image: url('/src/assets/building1.jpg'); }
+    33.33% { background-image: url('/src/assets/building2.jpg'); }
+    66.66% { background-image: url('/src/assets/building3.jpg'); }
+    100% { background-image: url('/src/assets/building1.jpg'); }
+  }
+  
+  .animate-changeImage {
+    animation: changeImage 10s infinite;
+    background-size: cover; /* Ensure the background image covers the element */
+    background-position: center; /* Center the background image */
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
